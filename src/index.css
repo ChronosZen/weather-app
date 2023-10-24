@@ -5,9 +5,74 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: rgb(34, 49, 120);
+  background: linear-gradient(120deg,
+      rgba(34, 49, 120, 1) 0%,
+      rgba(45, 60, 130, 1) 25%,
+      rgba(93, 99, 146, 1) 50%,
+      rgba(85, 90, 140, 1) 75%,
+      rgba(74, 83, 116, 1) 100%);
+
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder,
+input {
+  color: #e2e1ec;
+}
+
+input {
+  border: none
+}
+
+.text-color {
+  color: #e2e1ec;
+}
+
+.text-color-min {
+  color: #c5c5c5;
+}
+
+.bg-box {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+
+.main-app {
+  border-radius: 1.5rem;
+  border: 1.5px rgb(179, 179, 179) solid;
+}
+
+.max-md-width {
+  max-width: 800px;
+}
+
+.separator {
+  border-top: solid #e2e1ec 2.5px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+.day-card {
+  width: 115px;
+}
+
+input {
+  font-size: 16px;
+  text-overflow: ellipsis;
 }
