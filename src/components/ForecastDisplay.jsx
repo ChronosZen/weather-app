@@ -10,7 +10,7 @@ function ForecastDisplay({ query, toggleValue, handleLoading, isLoading }) {
       try {
         handleLoading(true);
         const res = await fetch(
-          `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${query}&days=${forecastDate}&aqi=no&alerts=no`
+          `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${query}&days=${forecastDate}&aqi=no&alerts=no`
         );
         const data = await res.json();
         setforecastData(data.forecast);
