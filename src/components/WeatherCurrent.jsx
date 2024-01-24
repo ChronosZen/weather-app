@@ -15,7 +15,7 @@ function WeatherCurrent({ query, toggleValue, handleLoading, isLoading }) {
       try {
         handleLoading(true);
         const res = await fetch(
-          `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${query}&aqi=no`
+          `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${query}&aqi=no`
         );
         const data = await res.json();
         setCurrentData(data);
