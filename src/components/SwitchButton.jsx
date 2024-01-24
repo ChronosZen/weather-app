@@ -7,7 +7,6 @@ function SwitchButton({ handleToggleValue, toggleValue }) {
         role="switch"
         id="flexSwitchCheckDefault"
         onClick={(e) => {
-          console.log(toggleValue);
           handleToggleValue();
         }}
       />
